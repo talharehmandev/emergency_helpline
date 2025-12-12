@@ -1,3 +1,4 @@
+import 'package:emergency_helpline/models/emergencyNumber_model.dart';
 import 'package:flutter/material.dart';
 import 'package:emergency_helpline/emergency_helpline.dart';
 
@@ -11,10 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(title: const Text("Emergency Helpline Example")),
-        body: const EmergencyDemo(),
+      debugShowCheckedModeBanner: false,
+      title: "Emergency Helpline",
+      theme: ThemeData(
+        primarySwatch: Colors.red,
       ),
+      home: const EmergencyDemo(),
     );
   }
 }
@@ -37,14 +40,12 @@ class _EmergencyDemoState extends State<EmergencyDemo> {
     loadData();
   }
 
-  /// Loads default country + all codes
   Future<void> loadData() async {
     allCodes = await EmergencyHelpline.instance.getAllCountryCodes();
     data = await EmergencyHelpline.instance.getCountry(selectedCode);
     setState(() {});
   }
 
-  /// Whenever user selects another country
   Future<void> changeCountry(String code) async {
     selectedCode = code;
     data = await EmergencyHelpline.instance.getCountry(code);
@@ -53,92 +54,148 @@ class _EmergencyDemoState extends State<EmergencyDemo> {
 
   @override
   Widget build(BuildContext context) {
-    return allCodes.isEmpty
-        ? const Center(child: CircularProgressIndicator())
-        : Padding(
-      padding: const EdgeInsets.all(20),
-      child: Column(
-        children: [
-          /// -----------------------------------------------------
-          /// COUNTRY DROPDOWN (shows all supported codes)
-          /// -----------------------------------------------------
-          DropdownButton<String>(
-            value: selectedCode,
-            items: allCodes
-                .map((c) => DropdownMenuItem(value: c, child: Text(c)))
-                .toList(),
-            onChanged: (value) {
-              if (value != null) changeCountry(value);
-            },
-          ),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Emergency Helpline"),
+        centerTitle: true,
+      ),
+      body: allCodes.isEmpty
+          ? const Center(child: CircularProgressIndicator())
+          : SingleChildScrollView(
+        padding: const EdgeInsets.all(20),
+        child: Column(
+          children: [
+            /// ---------------- Country Dropdown ----------------
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text(
+                  "Select Country: ",
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                ),
+                DropdownButton<String>(
+                  value: selectedCode,
+                  items: allCodes
+                      .map((c) => DropdownMenuItem(value: c, child: Text(c)))
+                      .toList(),
+                  onChanged: (value) {
+                    if (value != null) changeCountry(value);
+                  },
+                ),
+              ],
+            ),
 
-          const SizedBox(height: 20),
+            const SizedBox(height: 20),
 
-          /// -----------------------------------------------------
-          /// SHOW EMERGENCY NUMBERS OF SELECTED COUNTRY
-          /// -----------------------------------------------------
-          data == null
-              ? const Text("No data available")
-              : Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                "Country: ${data!.countryName}",
-                style: const TextStyle(
-                    fontSize: 20, fontWeight: FontWeight.bold),
+            /// ---------------- Info Card ----------------
+            Card(
+              elevation: 5,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15)),
+              child: Padding(
+                padding: const EdgeInsets.all(20),
+                child: data == null
+                    ? const Center(child: Text("No data available"))
+                    : Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      data!.countryName,
+                      style: const TextStyle(
+                          fontSize: 22, fontWeight: FontWeight.bold),
+                    ),
+                    const Divider(height: 20, thickness: 2),
+                    _buildRow(Icons.local_police, "Police", data!.police),
+                    _buildRow(Icons.local_hospital, "Ambulance", data!.ambulance),
+                    _buildRow(Icons.local_fire_department, "Fire", data!.fire),
+                  ],
+                ),
               ),
-              const SizedBox(height: 10),
-              Text("Police: ${data!.police}",
-                  style: const TextStyle(fontSize: 18)),
-              Text("Ambulance: ${data!.ambulance}",
-                  style: const TextStyle(fontSize: 18)),
-              Text("Fire: ${data!.fire}",
-                  style: const TextStyle(fontSize: 18)),
-            ],
-          ),
+            ),
 
-          const SizedBox(height: 30),
+            const SizedBox(height: 30),
 
-          /// -----------------------------------------------------
-          /// QUICK ACCESS BUTTONS (Police / Ambulance / Fire)
-          /// -----------------------------------------------------
-          ElevatedButton(
-            onPressed: () async {
-              final police =
-              await EmergencyHelpline.instance.police(selectedCode);
-              _showPopup("Police Number: $police");
-            },
-            child: const Text("Get Police Number"),
-          ),
+            /// ---------------- Quick Access Buttons ----------------
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                _buildEmergencyButton(
+                  icon: Icons.local_police,
+                  label: "Police",
+                  color: Colors.blue,
+                  onTap: () async {
+                    final police =
+                    await EmergencyHelpline.instance.police(selectedCode);
+                    _showPopup("Police Number: $police");
+                  },
+                ),
+                _buildEmergencyButton(
+                  icon: Icons.local_hospital,
+                  label: "Ambulance",
+                  color: Colors.green,
+                  onTap: () async {
+                    final ambulance =
+                    await EmergencyHelpline.instance.ambulance(selectedCode);
+                    _showPopup("Ambulance Number: $ambulance");
+                  },
+                ),
+                _buildEmergencyButton(
+                  icon: Icons.local_fire_department,
+                  label: "Fire",
+                  color: Colors.red,
+                  onTap: () async {
+                    final fire =
+                    await EmergencyHelpline.instance.fire(selectedCode);
+                    _showPopup("Fire Number: $fire");
+                  },
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
 
-          ElevatedButton(
-            onPressed: () async {
-              final ambulance = await EmergencyHelpline.instance
-                  .ambulance(selectedCode);
-              _showPopup("Ambulance Number: $ambulance");
-            },
-            child: const Text("Get Ambulance Number"),
-          ),
-
-          ElevatedButton(
-            onPressed: () async {
-              final fire =
-              await EmergencyHelpline.instance.fire(selectedCode);
-              _showPopup("Fire Brigade Number: $fire");
-            },
-            child: const Text("Get Fire Number"),
-          ),
+  /// ---------------- Helper: Row in Info Card ----------------
+  Widget _buildRow(IconData icon, String label, String value) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 8),
+      child: Row(
+        children: [
+          Icon(icon, color: Colors.redAccent),
+          const SizedBox(width: 10),
+          Text("$label: ", style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w500)),
+          Text(value, style: const TextStyle(fontSize: 18)),
         ],
       ),
     );
   }
 
-  /// Small popup on button click
+  /// ---------------- Helper: Emergency Button ----------------
+  Widget _buildEmergencyButton(
+      {required IconData icon,
+        required String label,
+        required Color color,
+        required VoidCallback onTap}) {
+    return ElevatedButton.icon(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: color,
+        padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 15),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+      ),
+      onPressed: onTap,
+      icon: Icon(icon, size: 24),
+      label: Text(label),
+    );
+  }
+
+  /// ---------------- Helper: Popup ----------------
   void _showPopup(String text) {
     showDialog(
       context: context,
       builder: (_) => AlertDialog(
-        title: const Text("Info"),
+        title: const Text("Emergency Number"),
         content: Text(text),
         actions: [
           TextButton(
