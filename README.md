@@ -20,7 +20,7 @@ This package makes it easy to build emergency contact apps or display numbers fo
 Add the package to your pubspec.yaml:
 ```yml
  dependencies:                     
- emergency_helpline: ^0.0.2     
+ emergency_helpline: ^0.0.3     
  ```
 Then run: flutter pub get
 
@@ -42,7 +42,7 @@ More countries will be added over time.
 
 ## 🧩 Example App
 
-A full example is available in the exampample tab.
+A full example is available in the example tab.
 
 ## 🛠️ Contributing
 Pull requests are welcome!

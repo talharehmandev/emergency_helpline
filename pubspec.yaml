@@ -1,6 +1,6 @@
 name: emergency_helpline
-description: A Flutter package providing emergency numbers for countries like Pakistan, USA, etc.
-version: 0.0.2
+description: A Flutter package providing emergency numbers for countries like Pakistan, USA, India, etc.
+version: 0.0.3
 homepage: https://github.com/talharehmandev/emergency_helpline.git
 
 environment:
@@ -14,7 +14,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^6.0.0
+  #flutter_lints: ^6.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -23,8 +23,8 @@ dev_dependencies:
 flutter:
 
   # To add assets to your package, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/emergency_numbers.json
   #   - images/a_dot_ham.jpeg
   #
   # For details regarding assets in packages, see

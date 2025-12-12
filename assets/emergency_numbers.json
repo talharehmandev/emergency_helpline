@@ -1,0 +1,20 @@
+{
+  "PK": {
+    "country_name": "Pakistan",
+    "police": "15",
+    "ambulance": "1122",
+    "fire": "16"
+  },
+  "US": {
+    "country_name": "United States",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911"
+  },
+  "IN": {
+    "country_name": "India",
+    "police": "100",
+    "ambulance": "102",
+    "fire": "101"
+  }
+}
