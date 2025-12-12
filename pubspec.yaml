@@ -1,6 +1,6 @@
 name: emergency_helpline
 description: A Flutter package providing emergency numbers for countries like Pakistan, USA, India, etc.
-version: 0.0.3
+version: 0.0.4
 homepage: https://github.com/talharehmandev/emergency_helpline.git
 
 environment:

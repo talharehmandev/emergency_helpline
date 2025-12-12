@@ -2,11 +2,12 @@
 
 A Flutter/Dart package that provides emergency contact numbers (Police, Ambulance, Fire Brigade, etc.) for countries around the world — including Pakistan (15, 1122, 16), USA (911), and many more.
 
+There are **136+ countries/regions** with emergency helpline information available in this.
+
 This package makes it easy to build emergency contact apps or display numbers for quick-dial purposes.
 
 
-
-![Screenshot](https://github.com/talharehmandev/emergency_helpline/blob/main/assets/sample_img.png?raw=true)
+<img src="https://github.com/talharehmandev/emergency_helpline/blob/main/assets/sample_img.png?raw=true" width="300" />
 
 
 ## 📦 Features
@@ -23,12 +24,13 @@ This package makes it easy to build emergency contact apps or display numbers fo
 Add the package to your pubspec.yaml:
 ```yml
  dependencies:                     
- emergency_helpline: ^0.0.3     
+ emergency_helpline: ^0.0.4     
  ```
 Then run: flutter pub get
 
 
 ## 🌍 Supported Countries (Sample)
+There are 136+ countries/regions with emergency helpline information available in this package.
 
 | Country  | Code | Police | Ambulance | Fire |
 |----------|------|--------|-----------|------|
@@ -67,8 +69,8 @@ You are free to use, modify, and distribute it.
 ---
 
 ## ❤️ Author
-### Talha Rehman (@talharehmandev)
-Flutter Developer
-Pakistan
+### **Talha Rehman (@talharehmandev)**
+
+**Flutter Developer Pakistan**
 
 If you use this package in your app, feel free to share the link with me!

@@ -23,6 +23,18 @@
     "ambulance": "127",
     "fire": "128"
   },
+  "AM": {
+    "country_name": "Armenia",
+    "police": "102",
+    "ambulance": "103",
+    "fire": "101"
+  },
+  "AO": {
+    "country_name": "Angola",
+    "police": "113",
+    "ambulance": "112",
+    "fire": "115"
+  },
   "AR": {
     "country_name": "Argentina",
     "police": "101",
@@ -41,6 +53,18 @@
     "ambulance": "000",
     "fire": "000"
   },
+  "AZ": {
+    "country_name": "Azerbaijan",
+    "police": "102",
+    "ambulance": "103",
+    "fire": "101"
+  },
+  "BA": {
+    "country_name": "Bosnia and Herzegovina",
+    "police": "122",
+    "ambulance": "124",
+    "fire": "123"
+  },
   "BD": {
     "country_name": "Bangladesh",
     "police": "999",
@@ -53,11 +77,35 @@
     "ambulance": "100",
     "fire": "112"
   },
+  "BF": {
+    "country_name": "Burkina Faso",
+    "police": "17",
+    "ambulance": "112",
+    "fire": "18"
+  },
   "BG": {
     "country_name": "Bulgaria",
     "police": "166",
     "ambulance": "150",
     "fire": "160"
+  },
+  "BH": {
+    "country_name": "Bahrain",
+    "police": "999",
+    "ambulance": "999",
+    "fire": "999"
+  },
+  "BN": {
+    "country_name": "Brunei",
+    "police": "993",
+    "ambulance": "991",
+    "fire": "995"
+  },
+  "BO": {
+    "country_name": "Bolivia",
+    "police": "110",
+    "ambulance": "118",
+    "fire": "119"
   },
   "BR": {
     "country_name": "Brazil",
@@ -65,11 +113,35 @@
     "ambulance": "192",
     "fire": "193"
   },
+  "BS": {
+    "country_name": "Bahamas",
+    "police": "919",
+    "ambulance": "919",
+    "fire": "919"
+  },
+  "BY": {
+    "country_name": "Belarus",
+    "police": "102",
+    "ambulance": "103",
+    "fire": "101"
+  },
+  "BZ": {
+    "country_name": "Belize",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911"
+  },
   "CA": {
     "country_name": "Canada",
     "police": "911",
     "ambulance": "911",
     "fire": "911"
+  },
+  "CD": {
+    "country_name": "DR Congo",
+    "police": "112",
+    "ambulance": "118",
+    "fire": "118"
   },
   "CH": {
     "country_name": "Switzerland",
@@ -77,11 +149,23 @@
     "ambulance": "144",
     "fire": "118"
   },
+  "CI": {
+    "country_name": "Ivory Coast",
+    "police": "170",
+    "ambulance": "185",
+    "fire": "180"
+  },
   "CL": {
     "country_name": "Chile",
     "police": "133",
     "ambulance": "131",
     "fire": "132"
+  },
+  "CM": {
+    "country_name": "Cameroon",
+    "police": "117",
+    "ambulance": "119",
+    "fire": "118"
   },
   "CN": {
     "country_name": "China",
@@ -95,6 +179,24 @@
     "ambulance": "125",
     "fire": "119"
   },
+  "CR": {
+    "country_name": "Costa Rica",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911"
+  },
+  "CU": {
+    "country_name": "Cuba",
+    "police": "106",
+    "ambulance": "104",
+    "fire": "105"
+  },
+  "CY": {
+    "country_name": "Cyprus",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112"
+  },
   "CZ": {
     "country_name": "Czech Republic",
     "police": "158",
@@ -107,8 +209,38 @@
     "ambulance": "112",
     "fire": "112"
   },
+  "DJ": {
+    "country_name": "Djibouti",
+    "police": "17",
+    "ambulance": "19",
+    "fire": "18"
+  },
   "DK": {
     "country_name": "Denmark",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112"
+  },
+  "DO": {
+    "country_name": "Dominican Republic",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911"
+  },
+  "DZ": {
+    "country_name": "Algeria",
+    "police": "17",
+    "ambulance": "14",
+    "fire": "14"
+  },
+  "EC": {
+    "country_name": "Ecuador",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911"
+  },
+  "EE": {
+    "country_name": "Estonia",
     "police": "112",
     "ambulance": "112",
     "fire": "112"
@@ -118,6 +250,12 @@
     "police": "122",
     "ambulance": "123",
     "fire": "180"
+  },
+  "ER": {
+    "country_name": "Eritrea",
+    "police": "113",
+    "ambulance": "116",
+    "fire": "114"
   },
   "ES": {
     "country_name": "Spain",
@@ -137,10 +275,22 @@
     "ambulance": "112",
     "fire": "112"
   },
+  "FJ": {
+    "country_name": "Fiji",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911"
+  },
   "FR": {
     "country_name": "France",
     "police": "17",
     "ambulance": "15",
+    "fire": "18"
+  },
+  "GA": {
+    "country_name": "Gabon",
+    "police": "1730",
+    "ambulance": "1300",
     "fire": "18"
   },
   "GB": {
@@ -149,11 +299,47 @@
     "ambulance": "999",
     "fire": "999"
   },
+  "GE": {
+    "country_name": "Georgia",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112"
+  },
+  "GH": {
+    "country_name": "Ghana",
+    "police": "191",
+    "ambulance": "193",
+    "fire": "192"
+  },
+  "GM": {
+    "country_name": "Gambia",
+    "police": "117",
+    "ambulance": "116",
+    "fire": "118"
+  },
+  "GN": {
+    "country_name": "Guinea",
+    "police": "122",
+    "ambulance": "442-020",
+    "fire": "171"
+  },
+  "GQ": {
+    "country_name": "Equatorial Guinea",
+    "police": "113",
+    "ambulance": "112",
+    "fire": "115"
+  },
   "GR": {
     "country_name": "Greece",
     "police": "100",
     "ambulance": "166",
     "fire": "199"
+  },
+  "GT": {
+    "country_name": "Guatemala",
+    "police": "110",
+    "ambulance": "123",
+    "fire": "122"
   },
   "HK": {
     "country_name": "Hong Kong",
@@ -161,11 +347,23 @@
     "ambulance": "999",
     "fire": "999"
   },
+  "HN": {
+    "country_name": "Honduras",
+    "police": "911",
+    "ambulance": "195",
+    "fire": "198"
+  },
   "HR": {
     "country_name": "Croatia",
     "police": "192",
     "ambulance": "194",
     "fire": "193"
+  },
+  "HT": {
+    "country_name": "Haiti",
+    "police": "114",
+    "ambulance": "118",
+    "fire": "115"
   },
   "HU": {
     "country_name": "Hungary",
@@ -197,17 +395,41 @@
     "ambulance": "102",
     "fire": "101"
   },
+  "IQ": {
+    "country_name": "Iraq",
+    "police": "104",
+    "ambulance": "122",
+    "fire": "115"
+  },
   "IR": {
     "country_name": "Iran",
     "police": "110",
     "ambulance": "115",
     "fire": "125"
   },
+  "IS": {
+    "country_name": "Iceland",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112"
+  },
   "IT": {
     "country_name": "Italy",
     "police": "113",
     "ambulance": "118",
     "fire": "115"
+  },
+  "JM": {
+    "country_name": "Jamaica",
+    "police": "119",
+    "ambulance": "110",
+    "fire": "110"
+  },
+  "JO": {
+    "country_name": "Jordan",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911"
   },
   "JP": {
     "country_name": "Japan",
@@ -221,6 +443,24 @@
     "ambulance": "999",
     "fire": "999"
   },
+  "KG": {
+    "country_name": "Kyrgyzstan",
+    "police": "102",
+    "ambulance": "103",
+    "fire": "101"
+  },
+  "KH": {
+    "country_name": "Cambodia",
+    "police": "117",
+    "ambulance": "119",
+    "fire": "118"
+  },
+  "KP": {
+    "country_name": "North Korea",
+    "police": "119",
+    "ambulance": "119",
+    "fire": "119"
+  },
   "KR": {
     "country_name": "South Korea",
     "police": "112",
@@ -233,11 +473,131 @@
     "ambulance": "112",
     "fire": "112"
   },
+  "KZ": {
+    "country_name": "Kazakhstan",
+    "police": "102",
+    "ambulance": "103",
+    "fire": "101"
+  },
+  "LB": {
+    "country_name": "Lebanon",
+    "police": "112",
+    "ambulance": "140",
+    "fire": "175"
+  },
+  "LI": {
+    "country_name": "Liechtenstein",
+    "police": "117",
+    "ambulance": "144",
+    "fire": "118"
+  },
   "LK": {
     "country_name": "Sri Lanka",
     "police": "119",
     "ambulance": "110",
     "fire": "111"
+  },
+  "LT": {
+    "country_name": "Lithuania",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112"
+  },
+  "LU": {
+    "country_name": "Luxembourg",
+    "police": "113",
+    "ambulance": "112",
+    "fire": "112"
+  },
+  "LV": {
+    "country_name": "Latvia",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112"
+  },
+  "LY": {
+    "country_name": "Libya",
+    "police": "1515",
+    "ambulance": "193",
+    "fire": "1515"
+  },
+  "MA": {
+    "country_name": "Morocco",
+    "police": "19",
+    "ambulance": "15",
+    "fire": "15"
+  },
+  "MD": {
+    "country_name": "Moldova",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112"
+  },
+  "ME": {
+    "country_name": "Montenegro",
+    "police": "122",
+    "ambulance": "124",
+    "fire": "123"
+  },
+  "MG": {
+    "country_name": "Madagascar",
+    "police": "117",
+    "ambulance": "124",
+    "fire": "118"
+  },
+  "MK": {
+    "country_name": "North Macedonia",
+    "police": "192",
+    "ambulance": "194",
+    "fire": "193"
+  },
+  "ML": {
+    "country_name": "Mali",
+    "police": "17",
+    "ambulance": "15",
+    "fire": "18"
+  },
+  "MM": {
+    "country_name": "Myanmar",
+    "police": "199",
+    "ambulance": "192",
+    "fire": "191"
+  },
+  "MN": {
+    "country_name": "Mongolia",
+    "police": "102",
+    "ambulance": "103",
+    "fire": "101"
+  },
+  "MO": {
+    "country_name": "Macau",
+    "police": "999",
+    "ambulance": "999",
+    "fire": "999"
+  },
+  "MT": {
+    "country_name": "Malta",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112"
+  },
+  "MU": {
+    "country_name": "Mauritius",
+    "police": "112",
+    "ambulance": "114",
+    "fire": "115"
+  },
+  "MV": {
+    "country_name": "Maldives",
+    "police": "119",
+    "ambulance": "102",
+    "fire": "118"
+  },
+  "MW": {
+    "country_name": "Malawi",
+    "police": "997",
+    "ambulance": "998",
+    "fire": "999"
   },
   "MX": {
     "country_name": "Mexico",
@@ -251,11 +611,35 @@
     "ambulance": "999",
     "fire": "994"
   },
+  "MZ": {
+    "country_name": "Mozambique",
+    "police": "119",
+    "ambulance": "117",
+    "fire": "198"
+  },
+  "NA": {
+    "country_name": "Namibia",
+    "police": "10111",
+    "ambulance": "2032276",
+    "fire": "2032270"
+  },
+  "NE": {
+    "country_name": "Niger",
+    "police": "17",
+    "ambulance": "15",
+    "fire": "18"
+  },
   "NG": {
     "country_name": "Nigeria",
     "police": "112",
     "ambulance": "112",
     "fire": "112"
+  },
+  "NI": {
+    "country_name": "Nicaragua",
+    "police": "118",
+    "ambulance": "128",
+    "fire": "115"
   },
   "NL": {
     "country_name": "Netherlands",
@@ -281,11 +665,29 @@
     "ambulance": "111",
     "fire": "111"
   },
+  "OM": {
+    "country_name": "Oman",
+    "police": "9999",
+    "ambulance": "9999",
+    "fire": "9999"
+  },
+  "PA": {
+    "country_name": "Panama",
+    "police": "104",
+    "ambulance": "911",
+    "fire": "103"
+  },
   "PE": {
     "country_name": "Peru",
     "police": "105",
     "ambulance": "117",
     "fire": "116"
+  },
+  "PG": {
+    "country_name": "Papua New Guinea",
+    "police": "112",
+    "ambulance": "111",
+    "fire": "110"
   },
   "PH": {
     "country_name": "Philippines",
@@ -311,6 +713,12 @@
     "ambulance": "112",
     "fire": "112"
   },
+  "PY": {
+    "country_name": "Paraguay",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911"
+  },
   "QA": {
     "country_name": "Qatar",
     "police": "999",
@@ -323,17 +731,41 @@
     "ambulance": "112",
     "fire": "112"
   },
+  "RS": {
+    "country_name": "Serbia",
+    "police": "192",
+    "ambulance": "194",
+    "fire": "193"
+  },
   "RU": {
     "country_name": "Russia",
     "police": "102",
     "ambulance": "103",
     "fire": "101"
   },
+  "RW": {
+    "country_name": "Rwanda",
+    "police": "112",
+    "ambulance": "912",
+    "fire": "112"
+  },
   "SA": {
     "country_name": "Saudi Arabia",
     "police": "999",
     "ambulance": "997",
     "fire": "998"
+  },
+  "SC": {
+    "country_name": "Seychelles",
+    "police": "999",
+    "ambulance": "999",
+    "fire": "999"
+  },
+  "SD": {
+    "country_name": "Sudan",
+    "police": "999",
+    "ambulance": "333",
+    "fire": "999"
   },
   "SE": {
     "country_name": "Sweden",
@@ -347,11 +779,77 @@
     "ambulance": "995",
     "fire": "995"
   },
+  "SI": {
+    "country_name": "Slovenia",
+    "police": "113",
+    "ambulance": "112",
+    "fire": "112"
+  },
+  "SK": {
+    "country_name": "Slovakia",
+    "police": "158",
+    "ambulance": "155",
+    "fire": "150"
+  },
+  "SN": {
+    "country_name": "Senegal",
+    "police": "17",
+    "ambulance": "1515",
+    "fire": "18"
+  },
+  "SO": {
+    "country_name": "Somalia",
+    "police": "888",
+    "ambulance": "999",
+    "fire": "555"
+  },
+  "SR": {
+    "country_name": "Suriname",
+    "police": "115",
+    "ambulance": "113",
+    "fire": "110"
+  },
+  "SS": {
+    "country_name": "South Sudan",
+    "police": "777",
+    "ambulance": "333",
+    "fire": "999"
+  },
+  "SV": {
+    "country_name": "El Salvador",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "913"
+  },
+  "SY": {
+    "country_name": "Syria",
+    "police": "112",
+    "ambulance": "110",
+    "fire": "113"
+  },
   "TH": {
     "country_name": "Thailand",
     "police": "191",
     "ambulance": "1669",
     "fire": "199"
+  },
+  "TJ": {
+    "country_name": "Tajikistan",
+    "police": "102",
+    "ambulance": "103",
+    "fire": "101"
+  },
+  "TM": {
+    "country_name": "Turkmenistan",
+    "police": "102",
+    "ambulance": "103",
+    "fire": "101"
+  },
+  "TN": {
+    "country_name": "Tunisia",
+    "police": "197",
+    "ambulance": "190",
+    "fire": "198"
   },
   "TR": {
     "country_name": "Turkey",
@@ -359,11 +857,23 @@
     "ambulance": "112",
     "fire": "110"
   },
+  "TT": {
+    "country_name": "Trinidad and Tobago",
+    "police": "999",
+    "ambulance": "811",
+    "fire": "990"
+  },
   "TW": {
     "country_name": "Taiwan",
     "police": "110",
     "ambulance": "119",
     "fire": "119"
+  },
+  "TZ": {
+    "country_name": "Tanzania",
+    "police": "112",
+    "ambulance": "114",
+    "fire": "115"
   },
   "UA": {
     "country_name": "Ukraine",
@@ -371,11 +881,35 @@
     "ambulance": "103",
     "fire": "101"
   },
+  "UG": {
+    "country_name": "Uganda",
+    "police": "999",
+    "ambulance": "112",
+    "fire": "112"
+  },
   "US": {
     "country_name": "United States",
     "police": "911",
     "ambulance": "911",
     "fire": "911"
+  },
+  "UY": {
+    "country_name": "Uruguay",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911"
+  },
+  "UZ": {
+    "country_name": "Uzbekistan",
+    "police": "102",
+    "ambulance": "103",
+    "fire": "101"
+  },
+  "VE": {
+    "country_name": "Venezuela",
+    "police": "171",
+    "ambulance": "911",
+    "fire": "171"
   },
   "VN": {
     "country_name": "Vietnam",
@@ -383,10 +917,28 @@
     "ambulance": "115",
     "fire": "114"
   },
+  "YE": {
+    "country_name": "Yemen",
+    "police": "194",
+    "ambulance": "191",
+    "fire": "191"
+  },
   "ZA": {
     "country_name": "South Africa",
     "police": "10111",
     "ambulance": "10177",
     "fire": "10111"
+  },
+  "ZM": {
+    "country_name": "Zambia",
+    "police": "999",
+    "ambulance": "992",
+    "fire": "993"
+  },
+  "ZW": {
+    "country_name": "Zimbabwe",
+    "police": "995",
+    "ambulance": "994",
+    "fire": "993"
   }
 }
