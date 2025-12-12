@@ -4,7 +4,10 @@ A Flutter/Dart package that provides emergency contact numbers (Police, Ambulanc
 
 This package makes it easy to build emergency contact apps or display numbers for quick-dial purposes.
 
-![Alt text](assets/sample_img.png)
+
+
+![Screenshot](https://github.com/talharehmandev/emergency_helpline/blob/main/assets/sample_img.png?raw=true)
+
 
 ## 📦 Features
 
