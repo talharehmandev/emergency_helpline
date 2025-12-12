@@ -1,49 +1,29 @@
-🚨 Emergency Helpline (Flutter / Dart Package)
+## 🚨 Emergency Helpline (Flutter / Dart Package)
 
 A Flutter/Dart package that provides emergency contact numbers (Police, Ambulance, Fire Brigade, etc.) for countries around the world — including Pakistan (15, 1122, 16), USA (911), and many more.
 
 This package makes it easy to build emergency contact apps or display numbers for quick-dial purposes.
 
-📦 Features
 
-Get emergency numbers by country code (ISO Alpha-2 → “PK”, “US”, etc.)
 
-Includes: Police, Ambulance, Fire
+## 📦 Features
 
-Lightweight & offline (no API required)
+- Get emergency numbers by **country code (ISO Alpha-2 → “PK”, “US”, etc.)**
+- Includes **Police, Ambulance, Fire**
+- **Lightweight & offline** (no API required)
+- **100% Dart** — works with Flutter & pure Dart
+- Easy to **extend** for more countries
 
-100% Dart — works with Flutter & pure Dart
 
-Easy to extend for more countries
 
-📥 Installation
-
+## 📥 Installation
 Add the package to your pubspec.yaml:
+```yml
+ dependencies:                     
+ emergency_helpline: ^0.0.1     
+ ```
+Then run: flutter pub get
 
-dependencies:
-emergency_helpline: ^0.0.1
-
-
-Then run:
-
-flutter pub get
-
-🚀 Usage
-Basic Example
-import 'package:emergency_helpline/emergency_helpline.dart';
-
-void main() {
-final pk = EmergencyHelpline.getForCountry("PK");
-
-print("Police: ${pk?.police}");
-print("Ambulance: ${pk?.ambulance}");
-print("Fire: ${pk?.fire}");
-}
-
-Output
-Police: 15
-Ambulance: 1122
-Fire: 16
 
 ## 🌍 Supported Countries (Sample)
 
@@ -58,32 +38,16 @@ Fire: 16
 
 More countries will be added over time.
 
-📚 API
-EmergencyHelpline.getForCountry(String code)
 
-Returns an EmergencyNumber object containing:
 
-class EmergencyNumber {
-final String police;
-final String ambulance;
-final String fire;
-}
+## 🧩 Example App
 
-🧩 Example App
+A full example is available in the exampample tab.
 
-A full example is included in the /example folder.
-To run it:
-
-cd example
-flutter run
-
-🛠️ Contributing
-
+## 🛠️ Contributing
 Pull requests are welcome!
 
-You can contribute by:
-
-Adding emergency numbers for more countries
+You can contribute by:  Adding emergency numbers for more countries
 
 Improving data accuracy
 
@@ -93,14 +57,15 @@ Adding region-level emergency numbers
 
 Fork the repo and create a pull request.
 
-📄 License
+## 📄 License
 
 This package is released under the MIT License.
 You are free to use, modify, and distribute it.
 
-❤️ Author
+---
 
-Talha Rehman
+## ❤️ Author
+### Talha Rehman (@talharehmandev)
 Flutter Developer
 Pakistan
 
