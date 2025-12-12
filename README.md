@@ -4,7 +4,7 @@ A Flutter/Dart package that provides emergency contact numbers (Police, Ambulanc
 
 This package makes it easy to build emergency contact apps or display numbers for quick-dial purposes.
 
-
+![Alt text](assets/sample_img.png)
 
 ## 📦 Features
 
@@ -34,7 +34,6 @@ Then run: flutter pub get
 | UK       | GB   | 999    | 999       | 999  |
 | India    | IN   | 112    | 102       | 101  |
 | Canada   | CA   | 911    | 911       | 911  |
-
 
 More countries will be added over time.
 

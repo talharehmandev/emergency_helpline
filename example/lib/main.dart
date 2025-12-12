@@ -1,6 +1,6 @@
-import 'package:emergency_helpline/models/emergencyNumber_model.dart';
 import 'package:flutter/material.dart';
 import 'package:emergency_helpline/emergency_helpline.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -185,8 +185,12 @@ class _EmergencyDemoState extends State<EmergencyDemo> {
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       ),
       onPressed: onTap,
-      icon: Icon(icon, size: 24),
-      label: Text(label),
+      icon: Icon(icon, size: 24,color: Colors.white,),
+      label: Text(
+        label,
+        style: const TextStyle(color: Colors.white),
+      ),
+
     );
   }
 

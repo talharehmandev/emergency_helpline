@@ -9,5 +9,5 @@
 
 ## 0.0.3
 
-* Many New Countries helplines added.
+* New Countries helplines added.
 * Minor Bug Fixes.

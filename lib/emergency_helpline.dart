@@ -1,9 +1,9 @@
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
-
 import 'models/emergencyNumber_model.dart';
+export 'models/emergencyNumber_model.dart';
 
-/// -------------------------------------------------------------
+
 /// MAIN SERVICE CLASS
 /// -------------------------------------------------------------
 class EmergencyHelpline {
