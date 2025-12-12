@@ -20,7 +20,7 @@ This package makes it easy to build emergency contact apps or display numbers fo
 Add the package to your pubspec.yaml:
 ```yml
  dependencies:                     
- emergency_helpline: ^0.0.1     
+ emergency_helpline: ^0.0.2     
  ```
 Then run: flutter pub get
 
